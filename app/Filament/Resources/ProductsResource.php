@@ -29,7 +29,7 @@ class ProductsResource extends Resource
                 Forms\Components\TextInput::make('brand_id')
                     ->required()
                     ->numeric(),
-                Forms\Components\TextInput::make('nama')
+                Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('slug')
@@ -62,7 +62,7 @@ class ProductsResource extends Resource
                 Tables\Columns\TextColumn::make('brand_id')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('nama')
+                Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
