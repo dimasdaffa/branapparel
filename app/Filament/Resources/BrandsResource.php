@@ -48,7 +48,7 @@ class BrandsResource extends Resource
                         ]),
                     FileUpload::make('image')
                         ->image()
-                        ->directory('categories'),
+                        ->directory('brands'),
                     Toggle::make('is_active')
                         ->required()
                         ->default(true)
@@ -91,7 +91,7 @@ class BrandsResource extends Resource
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
-    }
+    }   
 
     public static function getRelations(): array
     {
